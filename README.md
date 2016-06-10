@@ -1,1 +1,2 @@
-# SB Cloud code examples and demos
+# Code examples for SB Cloud workshop & hackathon
+
