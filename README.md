@@ -1,4 +1,4 @@
-# Code examples for SB Cloud workshop & hackathon
+# SB Cloud workshop & hackathon
 
 ## 1. Getting Started
 - アカウント登録
