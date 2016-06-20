@@ -83,8 +83,8 @@ Apsara DB作成時のメモです。
 - データベース（wordpress）を作成し、wpuserでアクセスできるように権限を追加する
 - ECSからアクセスしてみる
 
-    # mysql -u wpuser -p -h rm-j6c1z4q3tpip76a5c.mysql.rds.aliyuncs.com wordpress
-    ★コマンドライン例。ホスト名は構築時に変わる。
+     # mysql -u wpuser -p -h rm-j6c1z4q3tpip76a5c.mysql.rds.aliyuncs.com wordpress
+     ★コマンドライン例。ホスト名は構築時に変わる。
 
 Apsara DBへの切り替え（データ移行）について。「wordpress」データベースをダンプして、リストアします。
 
