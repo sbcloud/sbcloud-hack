@@ -81,8 +81,8 @@ Apsara DB作成時のメモです。
 - whitelistを設定。グループを追加して、ECSのintranetアドレスを記載。
 - アカウント管理画面から、アカウントを作る（wpuser）
 - データベース（wordpress）を作成し、wpuserでアクセスできるように権限を追加する
-- ECSからアクセスしてみる
 
+以上が完了したら、ECSからアクセスしてみることが可能になります。
 
      # mysql -u wpuser -p -h rm-j6c1z4q3tpip76a5c.mysql.rds.aliyuncs.com wordpress
      ★コマンドライン例。ホスト名は構築時に変わる。
@@ -160,7 +160,8 @@ SLBを作成するメモです。
 
 - セキュリティグループの設定を変更し、「tcp/10022」を開放します（tcp/22とtcp/10022が開放されたグループを一時的に作成します）
 - ECSインスタンスのセキュリティグループを変更します。
-- 一般ユーザーの公開鍵設定を行います。
+
+一般ユーザーの公開鍵設定を行います。
 
     % mkdir .ssh
     % chmod 700 .ssh
@@ -168,14 +169,13 @@ SLBを作成するメモです。
     >>> paste public key of user
     % chmod 600 .ssh/authorized_keys
 
-- 公開鍵認証でログインできることを確認します。
-- sshの設定変更を行います。
+この状態で、公開鍵認証でログインできることを確認します。確認できたら、sshの設定変更を行います。
 
     # vi /etc/ssh/sshd_config
     >> Port 10022
     >> PasswordAuthentication no
 
-- サービスをリスタートして、設定を反映します。
+サービスをリスタートして、設定を反映します。
 
     # systemctl restart sshd
 
@@ -207,5 +207,3 @@ AlibabaCloudにおけるリソースの削除・開放は「Release setting」�
 
 基本的なECSの操作と、アプリケーション実行環境作成に係るオペレーションは以上の通りです。
 AlibabaCloudには他にも便利な機能がありますので、いろいろ試してみてください。
-
-
