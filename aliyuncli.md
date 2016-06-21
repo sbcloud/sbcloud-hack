@@ -3,7 +3,8 @@
 ## 0. Index
  - [インストール手順](#1-インストール手順)
  - [Debian系システムの場合](#2-debian系システムの場合)
- - [Windowsの場合](#3-windowsの場合)
+ - [Windowsの場合](## 3. Windowsの場合)
+ - [AutoCompleteの設定（オプション）](## 4. AutoCompleteの設定)
 
 ## 1. インストール手順
 
@@ -81,3 +82,10 @@ rds                                       | slb
 **NOTE:** 現在は`aliyuncli`が`python3`に対応しておりませんので、`python2`をインストールして下さい。
 <br>
 pythonのインストール完了後、[1.2 aliyuncliのインストール手順](#12-aliyuncliのインストール)に従って`aliyuncli`と各SDKをインストールして下さい。
+
+## 4. AutoCompleteの設定
+Linuxの場合は、AutoCompleteの設定が可能です。
+```
+complete -C `which aliyun_completer` aliyuncli
+```
+次回ログイン以降もこの設定を反映させたい場合は`~/.bash_profile`などにこのコマンドを追加して下さい。
