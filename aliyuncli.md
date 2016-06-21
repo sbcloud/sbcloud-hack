@@ -3,8 +3,8 @@
 ## 0. Index
  - [インストール手順](#1-インストール手順)
  - [Debian系システムの場合](#2-debian系システムの場合)
- - [Windowsの場合](## 3. Windowsの場合)
- - [AutoCompleteの設定（オプション）](## 4. AutoCompleteの設定)
+ - [Windowsの場合](#3-Windowsの場合)
+ - [AutoCompleteの設定（オプション）](#4-AutoCompleteの設定)
 
 ## 1. インストール手順
 
