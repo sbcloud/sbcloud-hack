@@ -209,6 +209,9 @@ wordpressの「一般設定」で、URLの設定をSLBのIPアドレスをベー
 - snapshotが完了したら、snapshotから「Create User-defined Image」をクリックして、カスタムイメージを作成します。
 
 - ECSを作成します。Imageとして、custom imageが選択できるようになっています（同一Regionでのみ可能）。
+- IPアドレスやホスト名以外、同じ構成のサーバーができます。
+
+※custom imageが使えるのはシステムディスクだけです。データディスク（追加ディスク）はimage化できません。
 
 ## Release setting
 
