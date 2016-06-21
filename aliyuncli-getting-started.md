@@ -51,7 +51,7 @@ Secret_Key ****************AvzQ     credentials    /Users/sarre27/.aliyuncli/cre
     Region          cn-hangzhou       configure    /Users/sarre27/.aliyuncli/configure
     Output                table       configure    /Users/sarre27/.aliyuncli/configure
 ```
-以降、`aliyuncli`コマンド使用時は設定したAccessKey、RegionIdと出力方法が使用される。
+以降、`aliyuncli`コマンド使用時は設定したAccessKey、RegionIdと出力フォーマットが使用される。
 例：Region一覧を表示する
 ```
 $ aliyuncli ecs DescribeRegions --filter Regions.Region[*].RegionId
@@ -69,7 +69,7 @@ $ aliyuncli ecs DescribeRegions --filter Regions.Region[*].RegionId
 |  us-west-1       |
 +------------------+
 ```
-コマンドを実行する時に別のAccessKey、RegionIdと出力方法の指定が可能。使用するオプションは以下の通り：
+コマンドを実行する時に別のAccessKey、RegionIdと出力フォーマットの指定が可能。使用するオプションは以下の通り：
  - --AccessKeyId:  Access Key IDを指定
  - --AccessKeySecret: Access Key Secretを指定
  - --RegionId: Region Idを指定
@@ -92,8 +92,8 @@ $ aliyuncli ecs DescribeRegions --filter Regions.Region[*].RegionId --AccessKeyI
 ```
 
 
-プロファイルを作成して複数アカウント（AccessKey）の設定も可能。
-ebsarrプロファイルで別のアカウントを設定
+プロファイルを作成して複数アカウント（AccessKey）の設定も可能。Access KeyとIDをコマンドラインで入力するのは望ましくないので、複数のアカウントを使用する場合はプロファイルの設定をお勧めします。
+<br>ebsarrプロファイルで別のアカウントを設定
 ```
 $ aliyuncli configure --profile ebsarr
 Aliyun Access Key ID [None]: ****************rGJN
