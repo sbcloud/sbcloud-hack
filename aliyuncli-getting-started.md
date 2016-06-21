@@ -12,13 +12,16 @@ aliyuncliを使用して、Alibaba Cloudのリソースを管理のに事前に�
 ### 事前作業：Access Key IDとAccess Key Secretを取得する
 
 Access Key Management Refreshコンソールを開く
+
 ![Open Access Key Manangement](attachments/OpenAKConsole.png)
 
 Continue to manage AccessKey
+
 ![Skip security tips](attachments/SkipSecTips.png)
 
 
 Access Keyを生成する
+
 ![Create](attachments/Create.png)
 
 承諾
@@ -26,6 +29,7 @@ Access Keyを生成する
 ![Agree](attachments/Agree.png)
 
 生成されたAccessKeyが確認できます。IDとSecretをコピーし、aliyuncliの設定を行います。Secretを表示するには"Show"のボタンをクリック。
+
 ![Get](attachments/Get.png)
 
 ### aliyuncliを設定する
