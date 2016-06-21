@@ -89,3 +89,5 @@ Linuxの場合は、AutoCompleteの設定が可能です。
 complete -C `which aliyun_completer` aliyuncli
 ```
 次回ログイン以降もこの設定を反映させたい場合は`~/.bash_profile`などにこのコマンドを追加して下さい。
+
+## [Getting Started Guide](aliyuncli-getting-started.md)を見る
