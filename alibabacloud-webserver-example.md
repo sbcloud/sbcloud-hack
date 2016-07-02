@@ -27,6 +27,13 @@ AlibabaCloudでWebサーバーを立てて、Wordpressでブログサイトを�
 
 ## LAMP環境構築のコマンドラインメモ
 
+※注意　cenosのイメージのバージョンが上がって（centos7u0_64_40G_aliaegis_20160120）、
+firewalldが有効になっていることがあるので、サービスを停止するか、
+正しくfirewalldを設定シて使いましょう。そうしないと、外部アクセスがSSH以外つながりません。
+
+    # systemctl stop firewalld
+    # systemctl disable firewalld
+
 LAMP環境を構築するメモです（Linux/Apache/MariaDB/PHP）。
 
     # yum install httpd mariadb-server php php-mysql
