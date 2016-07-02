@@ -27,8 +27,8 @@ AlibabaCloudでWebサーバーを立てて、Wordpressでブログサイトを�
 
 ## LAMP環境構築のコマンドラインメモ
 
-※注意　cenosのイメージのバージョンが上がって（centos7u0_64_40G_aliaegis_20160120）、
-firewalldが有効になっていることがあるので、サービスを停止するか、
+※注意　cenosのイメージのバージョンが上がって（centos7u2_64_40G_cloudinit_20160520.raw）、
+このイメージではデフォルトでfirewalldが有効になっています。サービスを停止するか、
 正しくfirewalldを設定シて使いましょう。そうしないと、外部アクセスがSSH以外つながりません。
 
     # systemctl stop firewalld
