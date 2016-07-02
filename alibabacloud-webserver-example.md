@@ -29,7 +29,7 @@ AlibabaCloudでWebサーバーを立てて、Wordpressでブログサイトを�
 
 ※注意　cenosのイメージのバージョンが上がって（centos7u2_64_40G_cloudinit_20160520.raw）、
 このイメージではデフォルトでfirewalldが有効になっています。サービスを停止するか、
-正しくfirewalldを設定シて使いましょう。そうしないと、外部アクセスがSSH以外つながりません。
+正しくfirewalldを設定して使いましょう。そうしないと、外部アクセスがSSH以外つながりません。
 
     # systemctl stop firewalld
     # systemctl disable firewalld
